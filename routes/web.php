@@ -18,5 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return 'Hello World!';
+});
+
 
 Route::post('/webhook', [TelegramController::class, 'webhook']);
